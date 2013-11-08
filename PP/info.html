@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Info</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<!--<link href="css/themes/jomkl.css" rel="stylesheet" type="text/css">
+<link href="css/themes/jomkl.min.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>-->
+
+<link href="css/themes/yallaRiyadh2.css" rel="stylesheet" type="text/css">
+<link href="css/themes/yallaRiyadh2.min.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+
+
+
+<link href="css/main.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" type="text/css" href="css/jquery.jdigiclock.css" />
+<script type="text/javascript" src="lib/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="lib/jquery.jdigiclock.js"></script>
+
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#digiclock').jdigiclock({
+            //configuration goes here
+                clockImagesPath: 'images/clock/',
+                weatherImagesPath: 'images/weather/',
+                lang: 'en',
+                am_pm: false,
+                weatherLocationCode: 'MEA|SA|SA007|RIYADH',
+                weatherMetric: 'C',
+                weatherUpdate: 0,
+                proxyType: 'php',
+			
+			
+        });
+    });
+</script>
+<!-- samsung -->
+</head>
+
+<body>
+ 
+ <!--riyadh history page -->
+ <div data-role="page" id="info" data-theme="a">
+   <div data-role="header">
+   <a href="index.php" data-icon="arrow-l" rel="external">Back</a>
+   
+     <h1>Info</h1>     
+   </div>
+   <div data-role="content">
+  
+  
+ <div id="digiclock"></div>
+     
+<p class="titlehotel">Travel Info</p>
+ <p class="isihotel">Riyadh is the capital and largest city of Saudi Arabia. It is also the capital of Riyadh Province, and belongs to the historical regions of Najd and Al-Yamama. It is situated in the center of the Arabian Peninsula on a large plateau, and is home to 5,254,560 people, and the urban center of a region with a population of close to 7 million people. The city is divided into 15 municipal districts, managed by Riyadh Municipality headed by the mayor of Riyadh, and the Riyadh Development Authority, chaired by the governor of Riyadh Province, Khalid bin Bandar Al Saud.<p class="isihotel">
+ <p class="titlehotel">Tips for Shoppers</p>
+ <p class="isihotel">It is wise to compare prices before you buy to ensure you get the best bargains. Prices in the bigger stores are usually fixed although bargaining is still practised in smaller shops and road side stalls.</p>
+ <p class="isihotel">Check for the correct voltage in electronic and electrical goods. Saudi Arabia, uses both 110 and 220 volts. Most stores however often sell electrical goods without plugs which may be fitted on request.</p>
+ 
+
+   </div>
+   <div data-role="footer">
+     <h4>Copyright &copy; 2013</h4>
+   </div>
+ </div>
+ <!--end of riyadh history page -->
+ 
+ 
+
+
+
+
+</body>
+</html>

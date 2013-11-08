@@ -1,0 +1,1886 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hotels</title>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<!--<link href="css/themes/jomkl.css" rel="stylesheet" type="text/css">
+<link href="css/themes/jomkl.min.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>-->
+<link href="css/themes/yallaRiyadh2.css" rel="stylesheet" type="text/css">
+<link href="css/themes/yallaRiyadh2.min.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+
+</head>
+
+<body>
+<!--hotel -->
+<div data-role="page" id="hotel" data-theme="a">
+  <div data-role="header">
+  <a href="index.php" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Hotels</h1>
+     
+  <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext"></a>
+    
+     
+        <div data-role="panel" id="mypanel" class="ui-responsive" data-theme="a" data-display="overlay" > 
+	
+    
+    <ul data-role="listview" data-theme="a" data-inset="false">
+        <a href="index.php"><img src ="images/title.gif" width="107" height="34"></a>
+        <li><a href="klhist.php" rel="external">Riyadh History</a></li>
+        <li><a href="map.html" rel="external">Maps</a></li>
+        <li><a href="gallery.php" rel="external">Gallery</a></li>
+        <li> <a href="attraction.php" rel="external" >Attractions</a></li>
+        <li><a href="hotel.html" rel="external">Hotels</a></li>
+ <!--       <li><a href="transport.html" rel="external">Transportation</a></li>-->
+        <li><a href="info.html" rel="external">Info</a></li>
+    </ul>
+    
+    
+
+	
+	
+</div>
+
+    
+   
+    
+
+	
+	
+
+
+  </div>
+  
+  
+  
+  <div data-role="content"  >
+   <p class="pick">Search Hotels By</p>
+   <ul data-role="listview" data-inset="true">
+<!--        <li><a href="#popular">Most Popular</a></li>
+        <li><a href="#price">Best Price</a></li>-->
+        <li><a href="#star">By Star</a></li>
+       
+     
+    </ul>
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+
+<!--hotel -->
+
+
+
+<!--BY STAR -->
+<!--5 RATING -->
+<!--5rating -->
+<div data-role="page" id="star" data-theme="a" >
+
+  <div data-role="header" data-inset="true">
+  <a href="#hotel" data-icon="arrow-l" rel="external">Back</a>
+  
+  
+  
+    <h1>5 Stars Hotels</h1>
+    <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext"></a>
+     
+        <div data-role="panel" id="mypanel" class="ui-responsive" data-theme="a" data-display="overlay" > 
+	
+    
+    <ul data-role="listview" data-theme="a" data-inset="false">
+        <a href="index.php"><img src ="images/title.gif" width="107" height="34"></a>
+        <li><a href="klhist.php" rel="external">Riyadh History</a></li>
+        <li><a href="map.html" rel="external">Maps</a></li>
+        <li><a href="gallery.php" rel="external">Gallery</a></li>
+        <li> <a href="attraction.php" rel="external" >Attractions</a></li>
+        <li><a href="hotel.html" rel="external">Hotels</a></li>
+        <li><a href="info.html" rel="external">Info</a></li>
+    </ul>
+    
+    
+    
+    
+    
+
+	
+	
+</div>
+<div data-role="navbar">
+      
+        <ul>
+            <li><a href="#5star">5 Stars</a></li>
+            <li><a href="#4star">4 Stars</a></li>
+            <li><a href="#3star">3 Stars</a></li>
+            
+        </ul>
+    </div>
+  </div>
+  <div data-role="content">
+   <ul data-role="listview" data-inset="true" >
+        
+        
+        
+        
+        
+        <li><a href="#shangrila">
+        <img  src="images/viviendalogo.jpg">
+        <h1>Vivienda Hotel Villas</h1>
+        
+        </a>
+      </li>
+        
+        <li><a href="#mandarin">
+        <img class="thumb" src="images/fourseasonslogo.jpg">
+        <h1>Four Seasons Hotel Riyadh at Kingdom Centre</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#royal">
+        <img src="images/rosewoodlogo.jpg">
+        <h1>Al Faisaliah Hotel, A Rosewood Hotel</h1>
+        
+        </a>
+        </li>
+        
+         <li><a href="#westin">
+        <img src="images/ritzcarltonlogo.jpg">
+        <h1>The Ritz Carlton Riyadh</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#hilton">
+        <img src="images/interconlogo.jpg">
+        <h1>InterContinental Riyadh</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#ritz">
+        <img src="images/holidayinn.jpg">
+        <h1>Holiday Inn Riyadh Izdihar</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#hyatt">
+        <img src="images/makarimlogo.jpg">
+        <h1>Makarim Riyadh Hotel</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#micasa">
+        <img src="images/marriottlogo.jpg">
+        <h1>Riyadh Marriott Hotel</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#tree">
+        <img src="images/radissonlogo.jpg">
+        <h1>Radisson Blu Hotel, Riyadh</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#intercontinental">
+        <img src="images/novotellogo.jpg">
+        <h1>Novotel Al Anoud</h1>
+        
+        </a>
+        </li>
+        
+<!--         <li><a href="#meridien">
+        <img src="images/meri.jpg">
+        <h1>Le Meridien Kuala Lumpur</h1>
+        
+       </a>
+        </li>
+        
+        <li><a href="#majestic">
+        <img src="images/mje.jpg">
+        <h1>The Majestic Hotel Kuala Lumpur</h1>
+        
+        </a>
+        </li>
+        
+        -->
+        
+        </ul>
+        
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+  
+  
+  
+  
+</div>
+<!--5rating -->
+
+
+
+<!--shangrila -->
+<div data-role="page" id="shangrila" data-theme="a">
+  <div data-role="header" >
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+    
+  </div>
+  
+  
+  <div data-role="content"  >
+  
+  <p class="titlehotel"> Vivienda Hotel Villas </p>
+  <img class="resize" src="images/vivienda.jpg" >
+  
+  <p class="review"> Review: </p>
+  
+ 
+ 
+
+
+  <p class="isihotel">Vivienda is a new address for the discerning traveller, offering a harmonious balance between the warm and familiar atmosphere of a unique Spanish architectural style and the comfort and services of a luxury hotel.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Between Prince Turki Road and Tahlia, Riyadh, Saudi Arabia</p>
+
+  <a href="tel: +966114002200" data-role="button" data-icon="info" data-iconpos="left" data-inline="true">+966 11 400 2200</a> 
+  
+ 
+
+</div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+
+<!--shangrila -->
+
+
+
+<!--mandarin -->
+<div data-role="page" id="mandarin" data-theme="a">
+  <div data-role="header" >
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+  
+  <p class="titlehotel"> Four Seasons Hotel Riyadh at Kingdom Centre </p>
+  <img class="resize" src="images/fourseasons.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+
+
+  <p class="isihotel">Four Seasons Hotel Riyadh at Kingdom Centre is a stylish business and leisure destination located high in the Kingdom Tower, one of Saudi Arabia's most spectacular properties.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Kingdom Centre, Riyadh, Saudi Arabia</p>
+
+ <a href="tel: +966112115000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 211 5000</a>
+  
+  </div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--mandarin -->
+
+
+
+
+<!--royal -->
+<div data-role="page" id="royal" data-theme="a">
+  <div data-role="header">
+    <h1>5 Star Hotel</h1>
+    <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+  </div>
+  
+  
+  
+  
+  <div data-role="content">
+  
+   <p class="titlehotel"> Faisaliah Hotel, A Rosewood Hotel </p>
+  <img class="resize" src="images/rosewood.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Riyadh’s most luxurious property opened in May 2000. In a city that gracefully melds tradition with sophisticated style, Al Faisaliah Hotel, A Rosewood Hotel defines ultimate elegance and prestigious location. With the introduction of dedicated 24-hour butler service, the 330-room property has elevated the art of personal service to new levels. Perfectly suited to the discerning business traveler, Al Faisaliah Hotel offers spacious accommodations, technologically advanced in-room communications systems, six culinary venues, a state-of-the-art health club and easy access to world-class shopping.</p>
+
+<p class="res"> Addres: </p>
+ <p class="add">King Fahad Road, Al Olaya, Riyadh, Saudi Arabia</p>
+
+<a href="tel: +966112732000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 273 2000</a>
+
+</div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+  
+ <!--royal -->
+
+
+<!--Westin -->
+<div data-role="page" id="westin" data-theme="a">
+  <div data-role="header">
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+    
+  </div>
+  <div data-role="content">
+  
+  <p class="titlehotel"> The Ritz Carlton Riyadh </p>
+  <img class="resize" src="images/ritzcarlton.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">At the heart of the capital of the Kingdom of Saudi Arabia is a palatial retreat waiting to be discovered. The Ritz-Carlton, Riyadh hotel is a majestic and elegant oasis located within 52 acres of luxuriantly landscaped gardens, abundant water fountains, native palm trees and 600-year-old olive trees. Splendid amenities, including more than six distinctive restaurants and lounges, a lavish spa and unprecedented service, promise an unforgettable getaway.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Hada Area, Makkah Road, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96618028020" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 802 8020</a>
+  
+  </div>
+  <div data-role="footer">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--Westin -->
+
+
+<!--hilton -->
+<div data-role="page" id="hilton" data-theme="a">
+  <div data-role="header">
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+   <p class="titlehotel"> InterContinental Riyadh </p>
+  <img class="resize" src="images/intercon.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">An oasis in Riyadh, this hotel is surrounded by 100 acres of mature gardens and features a 9-hole golf course, floodlit tennis courts and an outdoor swimming pool. Conveniently located, the hotel is just five minutes from Riyadh’s business districts and 30 minutes from King Khaled International Airport. If exploring is your aim, discover ancient Saudi Arabia in Old Riyadh, or visit the scenic Al Thumama Park offering traditional camel rides, browse local souks or relax in Arabic coffee shops.</p>
+  
+  <p class="res"> Address: </p>
+ <p class="add">Maather Street, Al Mutamarat, Riyadh, Saudi Arabia</p>
+ 
+  <a href="tel: +966114655000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 465 5000</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--hilton -->
+
+
+
+<!--ritz -->
+<div data-role="page" id="ritz" data-theme="a">
+  <div data-role="header">
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+  </div>
+  
+  <div data-role="content">
+  
+   <p class="titlehotel"> Holiday Inn Riyadh Izdihar </p>
+  <img class="resize" src="images/izdihar.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Enjoy a unique location at the modern Holiday Inn Riyadh -Izdihar Hotel, midway between King Khaled International Airport and Riyadh city center.</p>
+ 
+  <p class="res"> Address: </p>
+ <p class="add">Olaya District, King Fahad Road, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +966114625000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 462 5000</a>
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--ritz -->
+
+
+<!--hyatt -->
+<div data-role="page" id="hyatt" data-theme="a">
+  <div data-role="header">
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+    
+  </div>
+  <div data-role="content">
+  
+  <p class="titlehotel"> Makarim Riyadh Hotel </p>
+  <img class="resize" src="images/makarim.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Makarim Riyadh Hotel is a five-star hotel run by Makarim hospitality group, one of the groups of Saudi Hotels & Resorts Co. The hotel has a distinctive features, as the hotel is located near to King Khalid International Airport in Riyadh and away from the noise of the city.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">Next To King Khalid International Airport, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96612204500" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 220 4500</a>
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--hyatt -->
+
+
+<!--Micasa All Suite -->
+<div data-role="page" id="micasa" data-theme="a">
+  <div data-role="header" >
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel"> Riyadh Marriott Hotel </p>
+  <img class="resize" src="images/marriott.jpg" >
+  
+  <p class="review"> Review: </p>
+ 
+ 
+
+
+  <p class="isihotel">Riyadh Marriott Hotel stands majestically in the center of the area's corporate, financial and governmental agencies. This luxurious Riyadh hotel is just minutes from major shopping malls and downtown districts with easy access to King Khalid International Airport.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">Al Ma'ather Street, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96612835300" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 283 5300</a>
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--Micasa All Suite -->
+
+
+
+<!--tree -->
+<div data-role="page" id="tree" data-theme="a">
+  <div data-role="header" >
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel"> Radisson Blu Hotel, Riyadh </p>
+  <img class="resize" src="images/radisson.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">An excellent choice for both business and leisure travelers, the Radisson Blu Hotel, Riyadh is set amid lush, landscaped grounds in the heart of the city. The hotel, only 40 kilometers from King Khalid International Airport, offers elegantly modern rooms surrounded by striking Arabian architecture.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">King Abdul Aziz Road, Salahuddin, Riyadh, Saudi Arabia</p>
+  
+ <a href="tel: +96614791234" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 479 1234</a> 
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--tre -->
+
+
+<!--intercontinental -->
+<div data-role="page" id="intercontinental" data-theme="a">
+  <div data-role="header" >
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel"> Novotel Al Anoud </p>
+  <img class="resize" src="images/novotel.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Novotel Riyadh Al Anoud offers166 well-appointed rooms & suites, located in Olaya, off King Fahad Express Way, in the hub of the business and shopping districts of Riyadh, with in easy access of Riyadh's International Exhibition Center, Diplomatic Quarters and Government offices. The Hotel also features light meals and drinks at the "Lounge Cafe" an International Cuisine restaurant “La Croisette" and banquet & Meeting facilities from 10 pax up to 300 pax.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">Al Anoud Tower No.1, King Fahad Road, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +966112882323" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 288 2323</a>
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--intercontinental -->
+
+
+<!--lemeridien -->
+<!--<div data-role="page" id="meridien" data-theme="a">
+  <div data-role="header" >
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel">Le Meridien Kuala Lumpur</p>
+  <img class="resize" src="images/merkamar.jpg" >
+  
+  <p class="review"> Review : </p>
+ 
+ 
+
+
+  <p class="isihotel">Le Meridien is one of the hotels located within close proximity to many famous sites of Kuala Lumpur, such as Petronas Twin Towers, Suria KLCC and the city's famous shopping district, Bukit Bintang.
+ </p>
+ 
+ <p class="res"> Address : </p>
+ <p class="add">199 Jalan Tun Razak  Pudu, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+  
+  <a href="tel:(+60)321681919" data-role="button" data-icon="info" data-iconpos="right" data-inline="true"> (+60)321681919</a>
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+<!--lemeridien -->
+
+
+<!--majestic -->
+<!--<div data-role="page" id="majestic" data-theme="a">
+  <div data-role="header" >
+  <a href="#star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>5 Star Hotel</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel">The Majestic Kuala Lumpur</p>
+  <img class="resize" src="images/majestickamar.jpg" >
+  
+  <p class="review"> Review : </p>
+ 
+ 
+
+
+  <p class="isihotel">The Majestic Hotel Kuala Lumpur includes the original Hotel Majestic which is documented as a national heritage site under the Malaysian Antiquities Act. This colonial heritage building was built in 1932 and 
+became one of the great hotels of Kuala Lumpur in its time.
+ </p>
+ 
+  <p class="res"> Address : </p>
+ <p class="add">5 Jalan Sultan Hishamuddin, KL City Centre Malaysia.  50000 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+  
+  <a href="tel:(+60)327858000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">(+60)327858000</a>
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+<!--majestic -->
+<!--5 RATING -->
+
+
+
+<!--4 RATING -->
+<!--4 STAR RATING -->
+<div data-role="page" id="4star" data-theme="a" >
+
+  <div data-role="header" data-inset="true">
+  <a href="#hotel" data-icon="arrow-l" rel="external">Back</a>
+  
+    <h1>4 Stars Hotels</h1>
+    <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext"></a>
+     
+        <div data-role="panel" id="mypanel" class="ui-responsive" data-theme="a" data-display="overlay" > 
+	
+    
+    <ul data-role="listview" data-theme="a" data-inset="false">
+        <a href="index.php"><img src ="images/title.gif" width="107" height="34"></a>
+        <li><a href="klhist.php" rel="external">Riyadh History</a></li>
+        <li><a href="map.html" rel="external">Maps</a></li>
+        <li><a href="gallery.php" rel="external">Gallery</a></li>
+        <li> <a href="attraction.php" rel="external">Attractions</a></li>
+        <li><a href="hotel.html" rel="external">Hotels</a></li>
+        <li><a href="info.html" rel="external">Info</a></li>
+    </ul>
+    
+    
+
+	
+	
+</div>
+<div data-role="navbar">
+      
+        <ul>
+            <li><a href="#star">5 Stars</a></li>
+            <li><a href="#4star">4 Stars</a></li>
+            <li><a href="#3star">3 Stars</a></li>
+            
+        </ul>
+    </div>
+
+  </div>
+  <div data-role="content">
+   <ul data-role="listview" data-inset="true" >
+        
+        
+        
+        
+        
+        <li><a href="#impiana">
+        <img  src="images/holidayinn.jpg" width="80" height="80">
+        <h1>Holiday Inn Riyadh-Olaya</h1>
+        
+        </a>
+      </li>
+        
+        <li><a href="#furama">
+        <img class="thumb" src="images/khozamalogo.jpg" width="80" height="80">
+        <h1>Hotel Al Khozama, A Rosewood Hotel</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#royalb">
+        <img src="images/madareemlogo.jpg" width="80" height="80">
+        <h1>Madareem Crown Hotel</h1>
+        
+        </a>
+        </li>
+        
+         <li><a href="#melia">
+        <img src="images/courtyardlogo.jpg" width="80" height="80">
+        <h1>Courtyard Riyadh Diplomatic Quarter</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#swiss">
+        <img src="images/executiveslogo.jpg" width="80" height="80">
+        <h1>Executives Hotel</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#corus">
+        <img src="images/hiltongardenlogo.jpg" width="80" height="80">
+        <h1>Hilton Garden Inn Riyadh Olaya</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#quality">
+        <img src="images/suitenovotellogo.jpg" width="80" height="80">
+        <h1>Suite Novotel Riyadh Olaya</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#parkroyal">
+        <img src="images/obaerlogo.jpg" width="80" height="80">
+        <h1>Obaer Hotel</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#picolo">
+        <img src="images/thebusinesslogo.jpg" width="80" height="80">
+        <h1>The Business Boutique Hotel</h1>
+        
+        </a>
+        </li>
+        
+       
+        
+        
+        </ul>
+        
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+  
+  
+  
+  
+</div>
+<!--4 STAR RATING -->
+
+
+
+
+<!--impiana -->
+<div data-role="page" id="impiana" data-theme="a">
+  <div data-role="header" >
+  <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>4 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content"  >
+  
+  <p class="titlehotel">Holiday Inn Riyadh-Olaya</p>
+  <img class="resize" src="images/olaya.jpg" >
+  
+  <p class="review"> Review: </p>
+  
+ 
+ 
+
+
+  <p class="isihotel">Choose the newly opened Holiday Inn Riyadh-Olaya hotel for a central location, 30 minutes' drive from King Khaled Airport, Conveniently located close to the highway and Riyadh's leading businesses and malls, Holiday Inn Riyadh-Olaya offers a tranquil base right in the heart of Riyadh.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Olaya District, King Fahad Road, Riyadh, Saudi Arabia</p>
+
+  <a href="tel: +966114625000" data-role="button" data-icon="info" data-iconpos="left" data-inline="true">+966 11 462 5000</a> 
+  
+ 
+
+</div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+
+<!--impiana -->
+
+
+
+<!--Furama -->
+<div data-role="page" id="furama" data-theme="a">
+  <div data-role="header" >
+  <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>4 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+  
+  <p class="titlehotel">Hotel Al Khozama, A Rosewood Hotel</p>
+  <img class="resize" src="images/khozama.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+
+
+  <p class="isihotel">Hotel Al Khozama is a premier hotel in Riyadh, the capital of Saudi Arabia. As a modern capital city, Riyadh features a mix of skyscrapers, towers and shopping malls. Yet elements of an ancient Arabian city such as the souk and old buildings remain, and the city is surrounded by desert. The great desert, the Rub al-Khali, lies to the south of the city. With centuries of experience in extending the warmest of Arabian welcomes to all of its visitors, the royal capital of Saudi Arabia, Riyadh, can satisfy the demands of the most discerning travelers with a range of quality facilities rivaling any other in the Middle East.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">Olaya Street, Al Olaya, Riyadh, Saudi Arabia</p>
+
+ <a href="tel: +966114654650" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 465 4650</a>
+  
+  </div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--Furama -->
+
+<!--picollo -->
+<div data-role="page" id="royalb" data-theme="a">
+  <div data-role="header" >
+  <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>4 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content"  >
+  
+  <p class="titlehotel">Madareem Crown Hotel</p>
+  <img class="resize" src="images/madareem.jpg" >
+  
+  <p class="review"> Review: </p>
+  
+ 
+ 
+
+
+  <p class="isihotel">Located in the heart of Riyadh, Madareem Crown meets the growing needs of business & leisure traveler visiting Saudi Arabia. Madareem Crown Hotel, your distinctive five –star hotel, which has benefits make it unique to other hotels in Riyadh. Located in the north area of Al Riyadh City, via the highway road to King Khalid International Airport (Exit 8).</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Airport Road, Al Falah, Riyadh, Saudi Arabia</p>
+
+  <a href="tel: +966112758888" data-role="button" data-icon="info" data-iconpos="left" data-inline="true">+966 11 275 8888</a> 
+  
+ 
+
+</div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+
+<!--picollo -->
+
+
+
+
+<!--royalb -->
+<div data-role="page" id="melia" data-theme="a">
+  <div data-role="header">
+    <h1>4 Star Hotel</h1>
+    <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+  </div>
+  
+  
+  
+  
+  <div data-role="content">
+  
+   <p class="titlehotel">Courtyard Riyadh Diplomatic Quarter</p>
+  <img class="resize" src="images/courtyard.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Experience the utmost in hospitality at Courtyard Riyadh Diplomatic Quarter. Considered one of the top business hotels in Riyadh, Saudi Arabia, we offer our guests convenient access to the business, government and financial districts.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Al-Hada District, Abdullah bin Huzafah, Riyadh, Saudi Arabia</p>
+
+<a href="tel: +96612817300" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 281 7300</a>
+
+</div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+  
+ <!--royalb -->
+
+
+<!--Melia -->
+<div data-role="page" id="swiss" data-theme="a">
+  <div data-role="header">
+  <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>4 Star Hotel</h1>
+    
+  </div>
+  <div data-role="content">
+  
+  <p class="titlehotel">Executives Hotel</p>
+  <img class="resize" src="images/executives.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">A Luxury 4 star Business Class Hotel is located at Olaya Street in Riyadh. It is just 25 min drive from King Khalid International Airport and just 200 m far away from the Kingdom Tower, which is an emerging brand in the hotel directory of Riyadh providing its unmatched beauty & hospitality, in addition to the fabulous city of Riyadh.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Olaya Road, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +966112885522" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 288 5522</a>
+  
+  </div>
+  <div data-role="footer">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--Melia -->
+
+
+<!--Swiss -->
+<div data-role="page" id="corus" data-theme="a">
+  <div data-role="header">
+  <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>4 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+   <p class="titlehotel">Hilton Garden Inn Riyadh Olaya</p>
+  <img class="resize" src="images/hiltongarden.JPG" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Stay in the Saudi Arabian capital's bustling commercial center at the Hilton Garden Inn hotel in Riyadh. Situated on the main street of the Olaya business district, this hotel is a comfortable and convenient base, walking distance from corporate offices. Old and new, the best of Riyadh is within easy reach, from historic souks and Musmak Fortress to high-end shopping and dining in the country's tallest skyscrapers.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">Building 8951, Olaya Steet, Al Olaya, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +966112935533" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 293 5533</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--Swiss -->
+
+
+
+<!--Corus -->
+<div data-role="page" id="quality" data-theme="a">
+  <div data-role="header">
+  <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>4 Star Hotel</h1>
+  </div>
+  
+  <div data-role="content">
+  
+   <p class="titlehotel">Suite Novotel Riyadh Olaya</p>
+  <img class="resize" src="images/suitenovotel.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">A new concept of contemporary elegance and style. A refined 4 Stars boutique hotel ambience. Located on Olaya Street, makes it an ideal place to cater for business and leisure travelers. 115 rooms and suites possess ample space to work and relax with modern amenities. Rooms features LCD TV showing international channels, Wi-Fi, tea & coffee making facilities, small fridge, microwave, IDD telephone with voicemail, hairdryer, personal safe, work desk, iron & ironing board to make you feel at home.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">Olaya Street, Al Olaya, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96614656555" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 465 6555</a>
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--Corus -->
+
+
+<!--quality -->
+<div data-role="page" id="parkroyal" data-theme="a">
+  <div data-role="header">
+  <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>4 Star Hotel</h1>
+    
+  </div>
+  <div data-role="content">
+  
+  <p class="titlehotel">Obaer Hotel</p>
+  <img class="resize" src="images/obaer.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">The Obaer Hotel Riyadh is located on heart of Riyadh, Olaya Main Street. Walking distance to the biggest malls of the city and other government offices. In addition, it is close to the business district. And 30 kilometres away from King Khalid International Airport. It's a new and elegant hotel located on the Olaya Street which consists of 170 rooms and suites. The Obaer Hotel is considered as intimate and distinguished style hotel sleek modern style; modern artworks and designs merge with fantastic facilities such as fitness center, business center, meeting rooms, luxurious different categories of rooms, etc.</p>
+ 
+  <p class="res"> Address: </p>
+ <p class="add">Olaya Street, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96612181000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 218 1000</a>
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--quality -->
+
+
+<!--Park Royal -->
+<div data-role="page" id="picolo" data-theme="a">
+  <div data-role="header" >
+  <a href="#4star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>4 Star Hotel</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel">The Business Boutique Hotel</p>
+  <img class="resize" src="images/thebusiness.JPG" >
+  
+  <p class="review"> Review: </p>
+ 
+ 
+
+
+  <p class="isihotel">The Business Hotel is a fresh choice amid Riyadh's bustling downtown conveniently located in the prestigious Olaya district. A stay here is about comfort and relaxation in a cool environment. The brand new boutique hotel offers easy access to the capital's diplomatic enclave and prime shopping and business attractions. King Khaled International Airport is merely 30 minutes away from the hotel.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">Olaya Street, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96612173777" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 217 3777</a>
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--Parkroyal -->
+<!--4 RATING -->
+
+
+
+<!--3 RATING -->
+<!--3 STAR RATING -->
+<div data-role="page" id="3star" data-theme="a" >
+
+  <div data-role="header" data-inset="true">
+  <a href="#hotel" data-icon="arrow-l" rel="external">Back</a>
+  
+    <h1>3 Star Hotels</h1>
+    <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext"></a>
+     
+        <div data-role="panel" id="mypanel" class="ui-responsive" data-theme="a" data-display="overlay" > 
+	
+    
+    <ul data-role="listview" data-theme="a" data-inset="false">
+        <a href="index.php"><img src ="images/title.gif" width="107" height="34"></a>
+        <li><a href="klhist.php" rel="external">Riyadh History</a></li>
+        <li><a href="map.html" rel="external">Maps</a></li>
+        <li><a href="gallery.php" rel="external">Gallery</a></li>
+        <li> <a href="attraction.php" rel="external">Attractions</a></li>
+        <li><a href="hotel.html" rel="external">Hotels</a></li>
+        <li><a href="info.html" rel="external">Info</a></li>
+    </ul>
+    
+    
+
+	
+	
+</div>
+<div data-role="navbar">
+      
+        <ul>
+            <li><a href="#star">5 Stars</a></li>
+            <li><a href="#4star">4 Stars</a></li>
+            <li><a href="#3star">3 Stars</a></li>
+            
+        </ul>
+    </div>
+
+  </div>
+  <div data-role="content">
+   <ul data-role="listview" data-inset="true" >
+        
+        
+        
+        
+        
+        <li><a href="#capitol">
+        <img  src="images/holidayinnqasr.jpg" width="80" height="80">
+        <h1>Holiday Inn Riyadh - Al Qasr</h1>
+        
+        </a>
+      </li>
+        
+        <li><a href="#sky">
+        <img src="images/holidayinn.jpg" width="80" height="80">
+        <h1>Holiday Inn Riyadh Meydan</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#sentral">
+        <img src="images/muthanalogo.jpg" width="80" height="80">
+        <h1>Almuthana Hotel</h1>
+        
+        </a>
+        </li>
+        
+         <li><a href="#radius">
+        <img src="images/ibislogo.jpg" width="80" height="80">
+        <h1>Ibis Riyadh Olaya Street</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#alor">
+        <img src="images/tulipinnlogo.jpg" width="80" height="80">
+        <h1>Tulip Inn Al Reef</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#geo">
+        <img src="images/aquariumlogo.jpg" width="80" height="80">
+        <h1>Aquarium Hotel – Riyadh</h1>
+        
+        </a>
+        </li>
+        
+        
+        
+       
+        
+        
+        </ul>
+        
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+  
+  
+  
+  
+</div>
+<!--3 STAR RATING -->
+
+
+
+
+<!--capitol -->
+<div data-role="page" id="capitol" data-theme="a">
+  <div data-role="header" >
+  <a href="#3star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>3 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content"  >
+  
+  <p class="titlehotel">Holiday Inn Riyadh - Al Qasr</p>
+  <img class="resize" src="images/alqasr.jpg" >
+  
+  <p class="review"> Review: </p>
+  
+ 
+ 
+
+
+  <p class="isihotel">Step into the cool marble Lobby of Holiday Inn Riyadh-Al Qasr, just 45 minutes by taxi from King Khalid International Airport. Our modern 5-story hotel is located in the fast-growing Olaya business district, close to major companies in the Al Faisaliyah Centre and futuristic Kingdom Tower.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Olaya District, King Fahad Road, Riyadh, Saudi Arabia</p>
+
+  <a href="tel: +966114625000" data-role="button" data-icon="info" data-iconpos="left" data-inline="true">+966 11 462 5000</a> 
+  
+ 
+
+</div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+
+<!--capitol -->
+
+
+
+<!--sky -->
+<div data-role="page" id="sky" data-theme="a">
+  <div data-role="header" >
+  <a href="#3star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>3 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+  
+  <p class="titlehotel">Holiday Inn Riyadh - Meydan</p>
+  <img class="resize" src="images/meydan.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+
+
+  <p class="isihotel">Welcome the latest and newest Holiday Inn to open the Kingdom of Saudi Arabia, purpose built to be an icon to this Global, well known and well-loved brand, Holiday Inn Riyadh Meydan will present a modern, fresh and vibrant environment for all the business and leisure traveler to Riyadh.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">King Fahad Road, Riyadh, Saudi Arabia</p>
+
+ <a href="tel: +966114625000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 11 462 5000</a>
+  
+  </div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--sky -->
+
+
+
+
+<!--sentral -->
+<div data-role="page" id="sentral" data-theme="a">
+  <div data-role="header">
+    <h1>3 Star Hotel</h1>
+    <a href="#3star" data-icon="arrow-l" rel="external">Back</a>
+  </div>
+  
+  
+  
+  
+  <div data-role="content">
+  
+   <p class="titlehotel">Almuthana Hotel</p>
+  <img class="resize" src="images/muthana.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Located in King Fahad Road, the main road in Riyadh city, this prime location makes you close to the main attractions in Riyadh city such as Al Faisaliah Tower, Kingdom Center Tower, in addition you will be nearby the major airline offices, travel agents, banks, shopping stores and malls, simply you will be in the heart of new Riyadh.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">King Fahad Road, Sulaimaniyah, Riyadh, Saudi Arabia</p>
+
+<a href="tel: +96612931230" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 293 1230</a>
+
+</div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+  
+ <!--sentral -->
+
+
+<!--alor -->
+<div data-role="page" id="radius" data-theme="a">
+  <div data-role="header">
+  <a href="#3star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>3 Star Hotel</h1>
+    
+  </div>
+  <div data-role="content">
+  
+  <p class="titlehotel">Ibis Riyadh Olaya Street</p>
+  <img class="resize" src="images/ibis.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Comfortable, cozy and modern, our 176 rooms - including 16 family twin bed rooms, 4 reduced mobility rooms and 2 non-smoking floors - come equipped with WIFI. Our open pasta and grill gives you the chance to choose your ingredients and make your own recipes. Café snacks available 24/7.</p>
+
+<p class="res"> Address: </p>
+ <p class="add">Al Olaya Street, Opposite to the Kingdom Tower, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96614199995" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 419 9995</a>
+  
+  </div>
+  <div data-role="footer">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--alor -->
+
+
+<!--geo -->
+<div data-role="page" id="alor" data-theme="a">
+  <div data-role="header">
+  <a href="#3star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>3 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+   <p class="titlehotel">Tulip Inn Al Reef</p>
+  <img class="resize" src="images/tulipinn.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">Tulip Inn Al Reef is conveniently located at King Abdul-Aziz Street, in Al Malaz Commercial district Downtown. 30 minutes away from King Khalid International Airport, 15 minutes from Riyadh Exhibition Center, Diplomatic Quarter (Foreign Embassies) & Olaya Commercial Center, 5 minutes from Railway Station. Nearby; are major Ministries, Government offices, Banks, Shopping Malls, Hospitals & Archeological Sites; just walking distance from the National Museum.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">King Abdul Aziz Street, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96614786555" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 478 6555</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--geo -->
+
+
+<!--radius -->
+<div data-role="page" id="geo" data-theme="a">
+  <div data-role="header">
+  <a href="#3star" data-icon="arrow-l" rel="external">Back</a>
+    <h1>3 Star Hotel</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+   <p class="titlehotel">Aquarium Hotel – Riyadh</p>
+  <img class="resize" src="images/aquarium.jpg" >
+  
+  
+ <p class="review"> Review: </p>
+ 
+
+
+  <p class="isihotel">The Aquarium Hotel is an ideal venue for both men and women business meetings, conferences, group banquet and social affairs with over 2500 sq. ft. of high Tec choice of equipped space with an extensive choice of modern and versatile conference rooms for any occasion.</p>
+ 
+ <p class="res"> Address: </p>
+ <p class="add">Prince Abdulaziz Ibn Musaid Ibn Jalawi, Riyadh, Saudi Arabia</p>
+  
+  <a href="tel: +96614023333" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">+966 1 402 3333</a>
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>
+<!--radius -->
+<!--3 RATING -->
+<!--BY STAR -->
+
+
+<!--Most Popular -->
+<!-- POPULAR -->
+<!--<div data-role="page" id="popular" data-theme="b" >
+
+  <div data-role="header" data-inset="true">
+  <a href="#hotel" data-icon="arrow-l" rel="external">Back</a>
+  
+    <h1>Most Popular</h1>
+    <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext"></a>
+     
+        <div data-role="panel" id="mypanel" class="ui-responsive" data-theme="b" data-display="overlay" > 
+	
+    
+    <ul data-role="listview" data-theme="a" data-inset="false">
+        <a href="index.php"><img src ="images/title.gif" width="107" height="34"></a>
+        <li><a href="klhist.php" rel="external">KL History</a></li>
+        <li><a href="map.html" rel="external">Maps</a></li>
+        <li><a href="gallery" rel="external">Gallery</a></li>
+        <li> <a href="attraction.php" rel="external" >Attraction</a></li>
+        <li><a href="hotel.html" rel="external">Hotel</a></li>
+        <li><a href="transport.html" rel="external">Transportation</a></li>
+        <li><a href="info.html" rel="external">Info</a></li>
+    </ul>
+    
+    
+
+	
+	
+</div>
+
+  </div>
+  <div data-role="content">
+   <ul data-role="listview" data-inset="true" >
+        
+        
+        
+        
+        
+        <li><a href="#meridien1">
+        <img src="images/meri.jpg">
+        <h1>Le Meridien Kuala Lumpur</h1>
+        
+        </a>
+      </li>
+        
+        <li><a href="#corus1">
+        <img src="images/corus.jpg" width="80" height="80">
+        <h1>Corus Hotel Kuala Lumpur</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#parkroyal1">
+        <img src="images/park.jpg" width="80" height="80">
+        <h1>Parkroyal Serviced Suites Kuala Lumpur</h1>
+        
+        </a>
+        </li>
+        
+       
+        <li><a href="#majestic1">
+        <img src="images/mje.jpg">
+        <h1>The Majestic Hotel Kuala Lumpur</h1>
+        
+        </a>
+        </li>
+        
+        
+        
+        </ul>
+        
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+  
+  
+  
+  
+</div>-->
+
+<!-- POPULAR -->
+
+<!--Corus1 -->
+<!--<div data-role="page" id="corus1" data-theme="a">
+  <div data-role="header">
+  <a href="#popular" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Most Popular</h1>
+  </div>
+  
+  <div data-role="content">
+  
+   <p class="titlehotel"> Corus Hotel Kuala Lumpur </p>
+  <img class="resize" src="images/coruskamar.jpg" >
+  
+  
+ <p class="review"> Review : </p>
+ 
+
+
+  <p class="isihotel">Corus Hotel Kuala Lumpur invites discerning corporate and leisure travellers to plush rooms and elegant spaces within close proximity to iconic landmarks like Petronas
+Twin Towers and KLCC. This ideal location allows visitors convenient access to most Kuala Lumpur attractions including the entertainment facilities at Bukit Bintang 
+ </p>
+ 
+ <p class="res"> Address : </p>
+ <p class="add">Jalan Ampang  50450 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+  
+  <a href="tel:(+60)321618888" data-role="button" data-icon="info" data-iconpos="right" data-inline="true"> (+60)321618888</a>
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+<!--Corus1 -->
+
+<!--lemeridien1 -->
+<!--<div data-role="page" id="meridien1" data-theme="a">
+  <div data-role="header" >
+  <a href="#popular" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Most Popular</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel">Le Meridien Kuala Lumpur</p>
+  <img class="resize" src="images/merkamar.jpg" >
+  
+  <p class="review"> Review : </p>
+ 
+ 
+
+
+  <p class="isihotel">Le Meridien is one of the hotels located within close proximity to many famous sites of Kuala Lumpur, such as Petronas Twin Towers, Suria KLCC and the city's famous shopping district, Bukit Bintang.
+ </p>
+ 
+ <p class="res"> Address : </p>
+ <p class="add">199 Jalan Tun Razak  Pudu, 50400 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+  
+  <a href="tel:(+60)321681919" data-role="button" data-icon="info" data-iconpos="right" data-inline="true"> (+60)321681919</a>
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+<!--lemeridien1 -->
+
+<!--Park Royal1 -->
+<!--<div data-role="page" id="parkroyal1" data-theme="a">
+  <div data-role="header" >
+  <a href="#popular" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Most Popular</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel"> Parkroyal Hotel Kuala Lumpur </p>
+  <img class="resize" src="images/parkkmr.JPG" >
+  
+  <p class="review"> Review : </p>
+ 
+ 
+
+
+  <p class="isihotel">Offering a favourable location and relaxing atmosphere, PARKROYAL Serviced Suites Kuala Lumpur is the right choice of accommodation, while visiting Kuala Lumpur. Must 
+visit attractions include Batu Caves is a limestone hill comprising three main caves and a few smaller ones, The Thean Hou Temple is one of the oldest temples in 
+Southeast Asia, Kuala Lumpur Bird Park, a sprawling 20-hectare park which houses more than 3,000 birds and 200 species from all over the world and Menara KL Tower. 
+ </p>
+ 
+ <p class="res"> Address : </p>
+ <p class="add">No.1 Jalan Nagasari Off Jalan Raja Chulan Kuala Lumpur 50200</p>
+  
+  <a href="tel:(+60)320841000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true"> (+60)320841000</a>
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+<!--Parkroyal1 -->
+
+<!--majestic1 -->
+<!--<div data-role="page" id="majestic1" data-theme="a">
+  <div data-role="header" >
+  <a href="#popular" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Most Popular</h1>
+  </div>
+  
+  
+  
+  <div data-role="content">
+  <p class="titlehotel">The Majestic Kuala Lumpur</p>
+  <img class="resize" src="images/majestickamar.jpg" >
+  
+  <p class="review"> Review : </p>
+ 
+ 
+
+
+  <p class="isihotel">The Majestic Hotel Kuala Lumpur includes the original Hotel Majestic which is documented as a national heritage site under the Malaysian Antiquities Act. This colonial heritage building was built in 1932 and 
+became one of the great hotels of Kuala Lumpur in its time.
+ </p>
+ 
+  <p class="res"> Address : </p>
+ <p class="add">5 Jalan Sultan Hishamuddin, KL City Centre Malaysia.  50000 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+  
+  <a href="tel:(+60)327858000" data-role="button" data-icon="info" data-iconpos="right" data-inline="true">(+60)327858000</a>
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+<!--majestic1 -->
+<!--Most Popular -->
+
+<!--PRICE -->
+<!--by Price -->
+<!--<div data-role="page" id="price" data-theme="b" >
+
+  <div data-role="header" data-inset="true">
+  <a href="#hotel" data-icon="arrow-l" rel="external">Back</a>
+  
+    <h1>Best Price</h1>
+    <a href="#mypanel" data-role="button" data-icon="bars" data-iconpos="notext"></a>
+     
+        <div data-role="panel" id="mypanel" class="ui-responsive" data-theme="b" data-display="overlay" > 
+	
+    
+    <ul data-role="listview" data-theme="a" data-inset="false">
+        <a href="index.php"><img src ="images/title.gif" width="107" height="34"></a>
+        <li><a href="klhist.php" rel="external">KL History</a></li>
+        <li><a href="map.html" rel="external">Maps</a></li>
+        <li><a href="gallery.php" rel="external">Gallery</a></li>
+        <li> <a href="attraction.php" rel="external" >Attraction</a></li>
+        <li><a href="hotel.html" rel="external">Hotel</a></li>
+        <li><a href="transport.html" rel="external">Transportation</a></li>
+        <li><a href="info.html" rel="external">Info</a></li>
+    </ul>
+    
+    
+
+	
+	
+</div>
+
+  </div>
+  <div data-role="content">
+   <ul data-role="listview" data-inset="true" >
+        
+        
+        
+        
+        
+        
+        <li><a href="#furama2">
+        <img src="images/furama.jpg" width="80" height="80">
+        <h1>Furama Bukit Bintang Hotel Kuala Lumpur</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#sky2">
+        <img src="images/sky.jpg" width="80" height="80">
+        <h1>Sky Express Hotel Bukit Bintang</h1>
+        
+        </a>
+        </li>
+        
+         <li><a href="#impiana2">
+        <img  src="images/impiana.jpg" width="80" height="80">
+        <h1>Impiana KLCC Hotel Kuala Lumpur</h1>
+        
+        </a>
+        </li>
+        
+        <li><a href="#picolo2">
+        <img src="images/picollo.jpg" width="80" height="80">
+        <h1>Picollo Hotel Kuala Lumpur</h1>
+        
+        </a>
+        </li>
+        
+       
+       
+        
+        
+        </ul>
+        
+  </div>
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+  
+  
+  
+  
+</div>-->
+
+<!--by Price -->
+
+
+<!--Furama2 -->
+<!--<div data-role="page" id="furama2" data-theme="a">
+  <div data-role="header" >
+  <a href="#price" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Best Price</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+  
+  <p class="titlehotel"> Furama Bukit Bintang Hotel Kuala Lumpur </p>
+  <img class="resize" src="images/furamakamar.jpg" >
+  
+  
+ <p class="review"> Review : </p>
+
+
+  <p class="isihotel"> Contemporary, sleek and elegant, Furama Bukit Bintang Hotel Kuala Lumpur provides deluxe accommodations and attentive service to business and leisure travellers. 
+The stylish Kuala Lumpur hotel places visitors close to the major entertainment, shopping and financial district. Vacationers can visit the iconic Petronas Twin Towers,
+ catch shows at Istana Budaya or go to the National Palace. Museum buffs can view the collections at the National Museum and National Art Gallery while others can walk 
+along Bukit Nanas Forest Reserve.
+ </p>
+ 
+ <p class="res"> Address : </p>
+ <p class="add">136 Jalan Changkat Thambi Dollah Kuala Lumpur 55100</p>
+
+ <a href="tel:(+60)327888888" data-role="button" data-icon="info" data-iconpos="right" data-inline="true"> (+60)327888888</a>
+  
+  </div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+<!--Furama2 -->
+
+<!--sky2 -->
+<!--<div data-role="page" id="sky2" data-theme="a">
+  <div data-role="header" >
+  <a href="#price" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Best Price</h1>
+  </div>
+  
+  
+  <div data-role="content">
+  
+  
+  <p class="titlehotel"> Sky Express Hotel Kuala Lumpur </p>
+  <img class="resize" src="images/skykamar.jpg" >
+  
+  
+ <p class="review"> Review : </p>
+
+
+  <p class="isihotel">Sky Express Hotel Kuala Lumpur sits in a superb and convenient location at Jalan Pudu in Kuala Lumpur, within walking distance to major shopping malls, business 
+and entertainment districts in Golden Triangle of Kuala Lumpur.
+ </p>
+ 
+ <p class="res"> Address : </p>
+ <p class="add">128 Jalan Pudu  Bukit Bintang, 55100 Kuala Lumpur, Federal Territory of Kuala Lumpur</p>
+
+ <a href="tel:(+60)321431133" data-role="button" data-icon="info" data-iconpos="right" data-inline="true"> (+60)321431133</a>
+  
+  </div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+<!--sky2 -->
+
+
+<!--impiana2 -->
+<!--<div data-role="page" id="impiana2" data-theme="a">
+  <div data-role="header" >
+  <a href="#price" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Best Price</h1>
+  </div>
+  
+  
+  <div data-role="content"  >
+  
+  <p class="titlehotel"> Impiana KLCC Hotel Kuala Lumpur</p>
+  <img class="resize" src="images/impianakamar.jpg" >
+  
+  <p class="review"> Review : </p>
+  
+ 
+ 
+
+
+  <p class="isihotel"> Offering the true essence of Malaysian hospitality and modern facilities, Impiana KLCC Hotel Kuala Lumpur is an ideal place for work and play. The convenient 
+location within the KLCC allows visitors to enjoy shopping at Suria KLCC Mall, which is 100 metres away.
+ </p>
+
+<p class="res"> Address : </p>
+ <p class="add">13 Jalan Pinang Kuala Lumpur 50450</p>
+
+  <a href="tel:(+60)321471111" data-role="button" data-icon="info" data-iconpos="left" data-inline="true"> (+60)321471111</a> 
+  
+ 
+
+</div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+
+<!--impiana2 -->
+
+
+<!--picollo2 -->
+<!--<div data-role="page" id="picolo2" data-theme="a">
+  <div data-role="header" >
+  <a href="#price" data-icon="arrow-l" rel="external">Back</a>
+    <h1>Best Price</h1>
+  </div>
+  
+  
+  <div data-role="content"  >
+  
+  <p class="titlehotel"> Picollo Hotel Kuala Lumpur</p>
+  <img class="resize" src="images/impianakamar.jpg" >
+  
+  <p class="review"> Review : </p>
+  
+ 
+ 
+
+
+  <p class="isihotel"> This modern eco-friendly hotel enjoys an extremely convenient location between Lot 10 and Fahrenheit 88 Shopping Malls, just 5 minutes' walk from Bukit Bintang 
+Monorail Station. It offers free Wi-Fi and free parking.
+Fish spa treatments and body massage are available at the Morino Kaze Aromatherapy Spa. The hotel also provides daily local newspapers delivered to the rooms and laundry services.
+ </p>
+
+<p class="res"> Address : </p>
+ <p class="add">No 101, Jalan Bukit Bintang
+55100 Kuala Lumpur, Malaysia</p>
+
+  <a href="tel:(+60)321465000" data-role="button" data-icon="info" data-iconpos="left" data-inline="true"> (+60)321465000</a> 
+  
+ 
+
+</div>
+  
+  
+  <div data-role="footer" data-position="fixed">
+    <h4>Copyright &copy; 2013</h4>
+  </div>
+</div>-->
+
+<!--picollo2 -->
+<!--PRICE -->
+
+
+</body>
+</html>
